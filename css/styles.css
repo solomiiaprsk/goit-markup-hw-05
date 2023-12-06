@@ -485,45 +485,56 @@ align-items: baseline;
 
 
 
-.subscribe-form-label {display:block;
-    color: #FFF;
+.subscribe-text {
+    color: #ffffff;
     font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
 margin-bottom:16px;}
 
+.subscribe-form {display: flex;
+gap: 24px;}
 
 .subscribe-form-input {
     width: 264px;
     height: 40px;
     border-radius: 4px;
-    border: 1px solid #FFF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: 1px solid #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    color: #ffffff;
+    outline: 0px solid transparent;
 }
 
 input[type="email"]::placeholder {
-color: rgba(255, 255, 255, 1);
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0.04em;
-        padding-left:16px;
+color: #ffffff;
 }
 
-.subscribe-btn {display: inline-flex;
+.subscribe-btn {display: flex;
+    min-width: 165px;
     padding: 8px 24px;
     justify-content: center;
     align-items: center;
     gap: 16px;
-border-radius: 4px;
-border:none;
-height:40px;
-color:#FFF;
-    background: #4D5AE5;}
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+    border:none;
+    height:40px;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    }
 
-.subscribe-btn-icon {fill:fff;}
+.subscribe-btn-icon {margin-left: 16px;}
 
 
 .backdrop {
@@ -684,7 +695,7 @@ color:#FFF;
 
 
 .contact-form-own-checkbox-icon {
-    fill; fff;
+    fill: #ffff;
     opacity:0;
 }
 
