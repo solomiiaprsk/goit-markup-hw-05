@@ -593,6 +593,32 @@
             </li>
           </ul>
         </div>
+
+        <div class="subscribe-form-wrapper">
+          <form class="subscribe-form">
+            <label class="subscribe-form-label" for="subscribe-email"
+              >Subscribe</label
+            >
+            <input
+              class="subscribe-form-input"
+              type="email"
+              name="subscribe-email"
+              id="subscribe-email"
+              placeholder="E-mail"
+            />
+            <button class="subscribe-btn" type="submit">
+              Subscribe
+              <svg
+                class="subscribe-btn-icon"
+                width="24"
+                height="24"
+                aria-label="subscribe-btn-icon"
+              >
+                <use href=./images/icons.svg#icon-subscribe-icon/>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -616,49 +642,81 @@
         <form class="contact-form">
           <div class="contact-form-field-wrapper">
             <label class="contact-form-field-label" for="user-name">Name</label>
-            <input
-              class="contact-form-input"
-              id="user-name"
-              name="user-name"
-              type="text"
-              pattern="[a-zA-Zа-яА-ЯіІїЇєЄ']+"
-              title="Solomiia"
-              required
-            />
+            <div class="contact-form-input-wrapper">
+              <input
+                class="contact-form-input"
+                id="user-name"
+                name="user-name"
+                type="text"
+                pattern="[a-zA-Zа-яА-ЯіІїЇєЄ']+"
+                title="Solomiia"
+                required
+              />
+              <svg
+                class="contact-form-input-icon"
+                width="18"
+                height="24"
+                aria-label="user-icon"
+              >
+                <use href="./images/icons.svg#icon-username" />
+              </svg>
+            </div>
           </div>
 
           <div class="contact-form-field-wrapper">
             <label class="contact-form-field-label" for="user-tel">Phone</label>
-            <input
-              class="contact-form-input"
-              id="user-tel"
-              name="user-tel"
-              type="tel"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-              title="xxx-xxx-xx-xx"
-              required
-            />
+            <div class="contact-form-input-wrapper">
+              <input
+                class="contact-form-input"
+                id="user-tel"
+                name="user-tel"
+                type="tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+                required
+              />
+              <svg
+                class="contact-form-input-icon"
+                width="18"
+                height="24"
+                aria-label="phone-icon"
+              >
+                <use href="./images/icons.svg#icon-phone" />
+              </svg>
+            </div>
           </div>
 
           <div class="contact-form-field-wrapper">
             <label class="contact-form-field-label" for="user-email"
               >Email</label
             >
-            <input
-              class="contact-form-input"
-              id="user-email"
-              name="user-email"
-              type="email"
-              required
-            />
+            <div class="contact-form-input-wrapper">
+              <input
+                class="contact-form-input"
+                id="user-email"
+                name="user-email"
+                type="email"
+                required
+              />
+              <svg
+                class="contact-form-input-icon"
+                width="18"
+                height="24"
+                aria-label="email-icon"
+              >
+                <use href="./images/icons.svg#icon-email" />
+              </svg>
+            </div>
           </div>
 
           <div class="contact-form-field-wrapper">
-            <label class="contact-form-field-label" for="">Comment</label>
+            <label class="contact-form-field-label" for="user-comment"
+              >Comment</label
+            >
             <textarea
-              class="contact-form-input"
-              name=""
-              id=""
+              class="contact-form-comment"
+              name="user-comment"
+              id="user-comment"
               cols="rows"
               placeholder="Text input"
               required
@@ -668,7 +726,7 @@
 
           <div class="contact-form-checkbox-wrapper">
             <input
-              class="contact-form-checkbox"
+              class="contact-form-checkbox visually-hidden"
               type="checkbox"
               id="user-privacy-policy"
               name="user-privacy-policy"
@@ -679,7 +737,18 @@
               class="contact-form-checkbox-label"
               for="user-privacy-policy"
             >
-              I accept the terms and conditions of the Privacy Policy
+              <span class="contact-form-own-checkbox">
+                <svg
+                  class="contact-form-own-checkbox-icon"
+                  width="16"
+                  height="16"
+                  aria-label="checkbox-mark"
+                >
+                  <use href="./images/icons.svg#icon-checkbox-checked" />
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="" class="privacy-policy-link">Privacy Policy</a>
             </label>
           </div>
 
