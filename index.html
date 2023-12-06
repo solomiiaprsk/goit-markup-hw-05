@@ -597,7 +597,7 @@
         <div class="subscribe-form-wrapper">
           <p class="subscribe-text">Subscribe</p>
           <form class="subscribe-form">
-            <label class="subscribe-form-label" for="subscribe-email">
+            <label class="subscribe-form-label">
               <input
                 class="subscribe-form-input"
                 type="email"
@@ -605,18 +605,18 @@
                 id="subscribe-email"
                 placeholder="E-mail"
               />
-              <button class="subscribe-btn" type="submit">
-                Subscribe
-                <svg
-                  class="subscribe-btn-icon"
-                  width="24"
-                  height="24"
-                  aria-label="subscribe-btn-icon"
-                >
-                  <use href="./images/icons.svg#icon-subscribe-icon" />
-                </svg>
-              </button>
             </label>
+            <button class="subscribe-btn" type="submit" for="subscribe-email">
+              Subscribe
+              <svg
+                class="subscribe-btn-icon"
+                width="24"
+                height="24"
+                aria-label="subscribe-btn-icon"
+              >
+                <use href="./images/icons.svg#icon-subscribe-icon" />
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -718,7 +718,6 @@
               class="contact-form-comment"
               name="user-comment"
               id="user-comment"
-              cols="rows"
               placeholder="Text input"
               required
             >
