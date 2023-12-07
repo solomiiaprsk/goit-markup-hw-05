@@ -611,9 +611,11 @@ color: #ffffff;
         margin-bottom: 16px;
 }
 
-.contact-form-field-wrapper {
+.contact-form-field-wrapper:first-child {
     margin-bottom: 8px;
 }
+
+.contact-form-field-wrapper {margin-bottom: 16px;}
 
 .contact-form-input-wrapper {position:relative;}
 
