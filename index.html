@@ -597,7 +597,7 @@
         <div class="subscribe-form-wrapper">
           <p class="subscribe-text">Subscribe</p>
           <form class="subscribe-form">
-            <label class="subscribe-form-label">
+            <label class="subscribe-form-label" for="subscribe-email">
               <input
                 class="subscribe-form-input"
                 type="email"
@@ -606,7 +606,7 @@
                 placeholder="E-mail"
               />
             </label>
-            <button class="subscribe-btn" type="submit" for="subscribe-email">
+            <button class="subscribe-btn" type="submit">
               Subscribe
               <svg
                 class="subscribe-btn-icon"
@@ -625,7 +625,7 @@
     <!-- modal-window -->
     <div class="backdrop">
       <div class="modal">
-        <button class="modal-close-btn">
+        <button class="modal-close-btn" type="button">
           <svg
             class="modal-close-btn-icon"
             width="8"
@@ -728,20 +728,17 @@
             <input
               class="contact-form-checkbox visually-hidden"
               type="checkbox"
-              id="user-privacy-policy"
-              name="user-privacy-policy"
+              id="user-privacy"
+              name="user-privacy"
               value="true"
               required
             />
-            <label
-              class="contact-form-checkbox-label"
-              for="user-privacy-policy"
-            >
+            <label class="contact-form-checkbox-label" for="user-privacy">
               <span class="contact-form-own-checkbox">
                 <svg
                   class="contact-form-own-checkbox-icon"
-                  width="16"
-                  height="16"
+                  width="10"
+                  height="8"
                   aria-label="checkbox-mark"
                 >
                   <use href="./images/icons.svg#icon-checkbox-checked" />

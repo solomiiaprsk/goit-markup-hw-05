@@ -547,8 +547,7 @@ color: #ffffff;
     opacity: 0;
         visibility: hidden;
         pointer-events: none;
-        transition: opacity 250ms linear,
-            visibility 250ms linear;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .backdrop.is-open {
@@ -566,6 +565,11 @@ color: #ffffff;
     min-height: 584px; 
     background-color: #FCFCFC;
     border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 72px 24px 24px 24px;
 }
 
 .modal-close-btn {
@@ -580,14 +584,21 @@ color: #ffffff;
     height:24px;
     line-height:0;
     fill:#2E2F42;
-    transition: fill 250ms linear, background-color 250ms linear;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    cursor: pointer;
 
 }
 
 .modal-close-btn:hover, .modal-close-btn:focus {
     fill: #FFFFFF;
     background-color: #404BBF;
+    border: none;
 }
+
+.modal-close-btn-icon {transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .contact-form-description {
     color: #2E2F42;
@@ -612,7 +623,7 @@ color: #ffffff;
     color: #8E8F99;
         font-size: 12px;
         font-weight: 400;
-        line-height: 14px;
+        line-height: 1.17;
         letter-spacing: 0.04em;
         margin-bottom:4px;
 }
@@ -623,7 +634,7 @@ color: #ffffff;
     border-radius: 4px;
     background-color:transparent;
     padding-left:38px;
-    transition: border-color 250ms linear;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: 0px solid transparent;
 }
 
@@ -636,7 +647,7 @@ color: #ffffff;
     left: 16px;
     transform:translateY(-50%);
     fill:#2E2F42;
-    transition: fill 250ms linear;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-form-input:focus + .contact-form-input-icon {fill:#4D5AE5;}
@@ -648,14 +659,15 @@ color: #ffffff;
     font-size: 12px;
     font-style: normal;
     font-weight:400;
-    line-height: normal;
+    line-height: 1.17;
     letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
     border: 1px solid rgba(46, 47, 66, 0.40);
     border-radius: 4px;
     background-color:transparent;
     padding: 8px 16px;
     resize:none;
-    transition:border-color 250ms linear;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline:0px solid transparent;
 }
 
@@ -667,7 +679,7 @@ color: #ffffff;
     flex-shrink: 0;
     font-size: 12px;
     font-weight: 400;
-    line-height: 14px;
+    line-height: 1.17;
     letter-spacing: 0.04em;}
 
 
@@ -678,17 +690,22 @@ color: #ffffff;
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.40);
-    border-radius: 4px;
+    border-radius: 2px;
     cursor: pointer;
    margin-right:8px;
    margin-left:24px;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   fill: transparent;
 
 }
 
 .contact-form-checkbox:checked 
 +.contact-form-checkbox-label 
 >.contact-form-own-checkbox 
-{background-color: #404BBF;}
+{background-color: #404BBF;
+    border: none;
+
+}
 
 .contact-form-checkbox:focus +.contact-form-checkbox-label > .contact-form-own-checkbox {outline: 2px solid transparent;}
 
@@ -708,14 +725,20 @@ color: #ffffff;
     text-decoration-line: underline;}
 
 .contact-form-submit-btn {
-    display: inline-flex;
+    display: block;
     padding: 16px 32px;
     justify-content: center;
     color: #fff;
-    width: 169px;
+    min-width: 169px;
+    height: 56px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
     border: none;
     border-radius: 4px;
     background: #4D5AE5;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     margin: 24px 119px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
